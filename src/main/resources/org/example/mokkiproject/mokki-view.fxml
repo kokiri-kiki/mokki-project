@@ -22,15 +22,16 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFFE0;">
                      <children>
-                        <TextField layoutX="94.0" layoutY="40.0" />
-                        <TextField layoutX="94.0" layoutY="88.0" />
+                        <TextField fx:id="LisataAlue" layoutX="94.0" layoutY="40.0" />
+                        <TextField fx:id="HakeaAlueita" layoutX="94.0" layoutY="88.0" />
                         <Text layoutX="14.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lisätä alue" />
                         <Text layoutX="14.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hakea alueita" />
-                        <TextArea layoutX="94.0" layoutY="127.0" prefHeight="200.0" prefWidth="161.0" text="Search results" />
-                        <Button fx:id="AlueLisataButton" layoutX="274.0" layoutY="40.0" mnemonicParsing="false" text="Lisätä" />
-                        <Button fx:id="AlueHakeaButton" layoutX="274.0" layoutY="88.0" mnemonicParsing="false" text="Hakea" />
+                        <TextArea fx:id="SearchResults" layoutX="94.0" layoutY="127.0" prefHeight="200.0" prefWidth="161.0" text="Search results" />
+                        <Button fx:id="AlueLisataButton" layoutX="274.0" layoutY="40.0" mnemonicParsing="false" onAction="#SaveToDB" text="Lisätä" />
+                        <Button fx:id="AlueHakeaButton" layoutX="274.0" layoutY="88.0" mnemonicParsing="false" onAction="#SearchDB" text="Hakea" />
                         <Button fx:id="AlueMuokataButton" layoutX="274.0" layoutY="127.0" mnemonicParsing="false" text="Muokata" />
                         <Button fx:id="AluePoistaaButton" layoutX="274.0" layoutY="302.0" mnemonicParsing="false" text="Poistaa" />
+                        <Button fx:id="TestDBConnectionController" layoutX="469.0" layoutY="200.0" mnemonicParsing="false" onAction="#ConnectDB" text="TestDB" />
                      </children>
                   </AnchorPane>
                </content>

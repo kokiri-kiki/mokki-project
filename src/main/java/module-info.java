@@ -2,6 +2,7 @@ module org.example.mokkiproject {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
+    requires java.sql;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -10,6 +11,7 @@ module org.example.mokkiproject {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     opens org.example.mokkiproject to javafx.fxml;
     exports org.example.mokkiproject;
